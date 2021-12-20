@@ -1,0 +1,53 @@
+﻿@model IEnumerable<App1.Models.Comprar>
+
+@{
+    ViewData["Title"] = "Início";
+}
+
+<h1 class="text-center titulo">Comprar</h1>
+
+<p>
+    <a asp-action="Create">Criar novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FormaPagamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data_Compra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormaPagamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data_Compra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.Email_Cliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino.Nome_Destino)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Compra">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Compra">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Compra">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

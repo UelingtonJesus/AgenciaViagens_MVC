@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+ <main>
+     <section class="flexbox">
+        <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleLigth" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="~/img/aviao2.jpg" class="d-block w-100 img" alt="Avião">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: #fff">Transforme seu sonho em realidade!</h1>
+                <p style="color: #fff">Mais de 300 mil clientes satisfeitos</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="~/img/disney.jpg" class="d-block w-100 img" alt="Parque da Disney">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: #fff">Venha para a Disney!</h1>
+                <p style="color: #fff">Conheça o maior parque temático do mundo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="~/img/havai.jpg" class="d-block w-100 img" alt="Havai">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: #fff">Venha para o Havai!</h>
+                  <p style="color: #fff">Desfrute desse paraíso tropical</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </section>
+        <h1 class="titulo text-center">Destaques</h1>
+        <section class="flexbox">
+
+
+
+
+          <div class="card m-4 " style="width: 18rem;">
+            <img src="~/img/cards/ilhasMaldivas.jpg" class="card-img-top" alt="Ilhas Maldivas">
+            <div class="card-body text-center">
+              <h5 class="card-title">Ilhas Maldivas</h5>
+              <p class="card-text"><s class="precoAntigo">R$ 3499,00</s><br><b>R$ 2999,90</b></p>
+              <a asp-action="Index" asp-controller="Clientes"  class="btn btn-outline">Reservar</a>
+            </div>
+          </div>
+
+
+
+          <div class="card m-4" style="width: 18rem;">
+            <img src="~/img/cards/Paris.jpg" class="card-img-top" alt="Paris">
+            <div class="card-body text-center">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text"><s class="precoAntigo">R$ 3299,00</s><br><b>R$ 2799,90</b></p>
+              <a asp-action="Index" asp-controller="Clientes" class="btn btn-outline">Reservar</a>
+            </div>
+          </div>
+
+
+          <div class="card m-4" style="width: 18rem;">
+            <img src="~/img/cards/ilhas-caribe.jpg.webp" class="card-img-top" alt="Ilhas Maldivas">
+            <div class="card-body text-center">
+              <h5 class="card-title">Caribe</h5>
+              <p class="card-text"><s class="precoAntigo">R$ 3199,00</s><br><b>R$ 2699,90</b></p>
+              <a asp-action="Index" asp-controller="Clientes"  class="btn btn-outline">Reservar</a>
+            </div>
+          </div>
+
+      </section>
+ </main>

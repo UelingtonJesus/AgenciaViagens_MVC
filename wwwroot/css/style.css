@@ -1,0 +1,80 @@
+
+
+.navbar, .footer{
+    background: -webkit-gradient(linear, left top, right top, from(#07001f), to(#0460D9)) no-repeat;
+    background: -moz-linear-gradient(left, #CCCCCC, #0460D9);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#CCCCCC', EndColorStr='#0460D9'); 
+  
+}
+.nav-link{
+    color: #fff;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .flexbox > div{
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+.carousel-item{
+    height: 80vh;
+}
+.precoAntigo{
+    color: red;
+}
+.img{
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+  }
+.card-img-top{
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn{
+    border: 1px solid #0460D9;
+    color: #0460D9;
+    border-radius:15px;
+}
+
+.btn:hover{
+    border: 1px solid #16B4F2;
+    color: #fff;
+    background-color: #16B4F2;
+}
+#FormasPagamento, .card-text, .card-title, .titulo{
+    color: #0460D9;
+}
+
+.contato{
+    width: 40vw;
+    
+}
+label{
+    color: #0460D9;
+}
+
+.destinos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    color: #0460D9;
+    width: 50vw;
+}
+tr.listrada{
+    background-color:  yellow;
+}
